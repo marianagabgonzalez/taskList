@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { TaskService } from 'src/app/service/task.service';
-import {Task} from '../Task' 
+import {Task} from '../Task'
+ 
 
 @Component({
   selector: 'app-tasks',
@@ -24,6 +24,7 @@ ngOnInit():void {
 this.tasks = tasks
  ));
 }
+
 deleteTask(task:Task) {
   this.taskService.deleteTask(task).subscribe(()=>(
   this.tasks = this.tasks.filter ( t => t.id !== task.id)
@@ -36,7 +37,7 @@ this.taskService.updateTaskReminder(task).subscribe()
 }
 
 addTask(task:Task) {
-  console.log(task)
+  console.log(task);
   this.taskService.addTask(task).subscribe( (task) =>(
   this.tasks.push(task)
   )

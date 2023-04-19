@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": 2,
-      "text": "Hacer las compras para la cena",
-      "day": "Agosto 5 a las 17:00",
-      "reminder": true
-    },
-    {
       "id": 3,
       "text": "Investigar sobre Bootstrap",
       "day": "Agosto 5 a las 1:00",
@@ -17,6 +11,12 @@
       "text": "Leer mi libro favorito",
       "day": "Agosto 5 a las 21:00",
       "reminder": false
+    },
+    {
+      "text": "Leer",
+      "day": "Septiembre 20 a las 15",
+      "reminder": false,
+      "id": 5
     }
   ]
 }

@@ -1,5 +1,8 @@
-<form class="add-form">
-    <div class="form-control" (ngSubmit)="onSubmit()">
+<form class="add-form" 
+(ngSubmit)="onSubmit()"
+*ngIf="showAddTask"
+>
+    <div class="form-control">
         <label for="text">Task</label>
         <input 
         type="text" 
@@ -28,12 +31,13 @@
         name="reminder" 
         id="reminder" 
         [(ngModel)]="reminder"
-        />
+       />
     </div>
 
     <input 
     type="submit" 
     value="Save Task" 
     class="btn btn-block"
-    >
-</form>
+    />
+
+   </form>
